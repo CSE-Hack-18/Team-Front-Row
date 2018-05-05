@@ -26,10 +26,11 @@ public class MainActivity extends AppCompatActivity implements Connector.IConnec
     public void Start(View v){
         vc = new Connector(videoFrame, Connector.ConnectorViewStyle.VIDYO_CONNECTORVIEWSTYLE_Default, 16, "", "", 0);
         vc.showViewAt(videoFrame, 0, 0, videoFrame.getWidth(), videoFrame.getHeight());
+        vc.cycleCamera();
     }
 
     public void Connect(View v) {
-        String ourSexyAssToken = "cHJvdmlzaW9uAENhbGxlckAyNzc2YzEudmlkeW8uaW8ANjM2OTI3NDAyNzcAAGYyM2NhNTdiZWZkMzJlMzI3OTE2YTRjYzE2ODcyYjBkYmU2MDY2NGE5ZjY1MDE2Y2MyM2ZmMzIzNThiYzY1ZWU1N2E1NjJjZmU5ODFhYjY3MDc3Y2UzYjZmOWNkMDAyMw==";
+        String ourSexyAssToken = "cHJvdmlzaW9uAENhbGxlckAyNzc2YzEudmlkeW8uaW8ANjM2OTI3Njg5MjYAADYzZjBjOTEwMmRlNWM5MzYzY2JiMTRmODdjM2I2Njg4M2I4ZGQ3MGFjZGRjNmJlNzVkZWIyYjk3MjcwNWM1YjgxM2YwN2UzMWIzNDQxMmJkNGFiYjE1ZmQ0MDlmMjM3MQ==";
         vc.connect("prod.vidyo.io", ourSexyAssToken, "Caller", "DemoRoom", this);
     }
 
