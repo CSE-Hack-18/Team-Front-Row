@@ -30,8 +30,8 @@ public class MainActivity extends AppCompatActivity implements Connector.IConnec
     }
 
     public void Connect(View v) {
-        String ourSexyAssToken = "cHJvdmlzaW9uAENhbGxlckAyNzc2YzEudmlkeW8uaW8ANjM2OTI3Njg5MjYAADYzZjBjOTEwMmRlNWM5MzYzY2JiMTRmODdjM2I2Njg4M2I4ZGQ3MGFjZGRjNmJlNzVkZWIyYjk3MjcwNWM1YjgxM2YwN2UzMWIzNDQxMmJkNGFiYjE1ZmQ0MDlmMjM3MQ==";
-        vc.connect("prod.vidyo.io", ourSexyAssToken, "Caller", "DemoRoom", this);
+        String ourToken = "cHJvdmlzaW9uAENhbGxlckAyNzc2YzEudmlkeW8uaW8ANjM2OTI3Njg5MjYAADYzZjBjOTEwMmRlNWM5MzYzY2JiMTRmODdjM2I2Njg4M2I4ZGQ3MGFjZGRjNmJlNzVkZWIyYjk3MjcwNWM1YjgxM2YwN2UzMWIzNDQxMmJkNGFiYjE1ZmQ0MDlmMjM3MQ==";
+        vc.connect("prod.vidyo.io", ourToken, "Caller", "DemoRoom", this);
     }
 
     public void Disconnect(View v){
