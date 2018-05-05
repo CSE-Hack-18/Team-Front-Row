@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity implements Connector.IConnec
     }
 
     public void Connect(View v) {
-        String token = "InsertValidTokenHere";
+        String token = "997565874fe44fe1b1125da00c84db71";
         vc.connect("prod.vidyo.io", token, "DemoUser", "DemoRoom", this);
     }
 
