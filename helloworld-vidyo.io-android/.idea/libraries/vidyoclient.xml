@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="vidyoclient">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/VidyoIODemo/app/libs/vidyoclient.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
