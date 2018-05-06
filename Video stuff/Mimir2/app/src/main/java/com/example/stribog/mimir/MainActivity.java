@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity implements Connector.IConnec
         ConnectorPkg.setApplicationUIContext(this);
         ConnectorPkg.initialize();
         videoFrame = (FrameLayout)findViewById(R.id.videoFrame);
+
     }
 
     public void Start(View v){
