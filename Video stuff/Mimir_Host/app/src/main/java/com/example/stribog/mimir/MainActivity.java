@@ -3,6 +3,7 @@ package com.example.stribog.mimir;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.FrameLayout;
 
 import com.vidyo.VidyoClient.Connector.*;
@@ -18,6 +19,7 @@ public class MainActivity extends AppCompatActivity implements Connector.IConnec
 
     private Connector vc;
     private FrameLayout videoFrame;
+    //final Button BUTTON = (Button) findViewById(R.id.button);
 
 
     @Override
@@ -28,6 +30,9 @@ public class MainActivity extends AppCompatActivity implements Connector.IConnec
         ConnectorPkg.setApplicationUIContext(this);
         ConnectorPkg.initialize();
         videoFrame = (FrameLayout)findViewById(R.id.videoFrame);
+
+
+
     }
 
     public void Start(View v){
@@ -41,7 +46,7 @@ public class MainActivity extends AppCompatActivity implements Connector.IConnec
         }
 
         String ourToken = "cHJvdmlzaW9uAEhvc3RAMjc3NmMxLnZpZHlvLmlvADYzNjkyODQ0MTMwAAAxZTMzMmJmZDIwYzdhNDlmOWVhZThjZDdkMGNjZGJiZmRlNTMyMzY0ZjMwNWI4NzI2MmJlYmIwZmVlNmY5YTM0MjdhZWU4YzFhNjk2MjJmMjkwODZjYmQwMDA4NTAwMDE=";
-        vc.connect("prod.vidyo.io", ourToken, "Hostr", "DemoRoom", this);
+        vc.connect("prod.vidyo.io", ourToken, "Host", "DemoRoom", this);
 
     }
 
