@@ -1,0 +1,122 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\Naief Jobsen\Desktop\mimir\app\src\main\AndroidManifest.xml:2:1-24:12
+INJECTED from C:\Users\Naief Jobsen\Desktop\mimir\app\src\main\AndroidManifest.xml:2:1-24:12
+INJECTED from C:\Users\Naief Jobsen\Desktop\mimir\app\src\main\AndroidManifest.xml:2:1-24:12
+INJECTED from C:\Users\Naief Jobsen\Desktop\mimir\app\src\main\AndroidManifest.xml:2:1-24:12
+MERGED from [com.android.support:design:27.1.1] C:\Users\Naief Jobsen\.gradle\caches\transforms-1\files-1.1\design-27.1.1.aar\db1ab94c8821a3966465560d6fa790b4\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\Naief Jobsen\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\12a41bc9d159651af4d2138e53ad9447\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\Naief Jobsen\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\be7de382857ed98eadf98befbe6f6442\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:support-v4:27.1.1] C:\Users\Naief Jobsen\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\1bfe0507461b44d996b774b3e7b6ea4b\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\Naief Jobsen\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\03a98464bca320a74bdd8b33663c8744\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\Naief Jobsen\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\a188793967064eec31c6ffaa14bc5a27\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:recyclerview-v7:27.1.1] C:\Users\Naief Jobsen\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.1.aar\7af7ba53a673ae8b5b08ea50d0438be6\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\Naief Jobsen\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\6ac36da1adbd0c6cee99cb9913b9cdd3\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\Naief Jobsen\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\2932b2935813d3970c0bba4fd597451d\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\Naief Jobsen\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\7de1037ba7807777c6f47962cfe58372\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:27.1.1] C:\Users\Naief Jobsen\.gradle\caches\transforms-1\files-1.1\transition-27.1.1.aar\b068c6080b9e4545c797cfcee0d9a52e\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\Naief Jobsen\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.1.aar\e8f083df258b02dfb1dc4083e05c5ced\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\Naief Jobsen\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\8a91326cf79e3da49bc3ce94eb26faf6\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\Naief Jobsen\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\2d6d7259a6b4a8fdf4de80ecf1486485\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\Naief Jobsen\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\9142bf5326c3a5d3211c073d4f93fd9f\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\Naief Jobsen\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\4de87721b5ad2202ea90458651099846\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\Naief Jobsen\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\42fdbf1f5e04c70798a3aedda06d6cf1\AndroidManifest.xml:17:1-22:12
+INJECTED from C:\Users\Naief Jobsen\Desktop\mimir\app\src\main\AndroidManifest.xml:2:1-24:12
+INJECTED from C:\Users\Naief Jobsen\Desktop\mimir\app\src\main\AndroidManifest.xml:2:1-24:12
+INJECTED from C:\Users\Naief Jobsen\Desktop\mimir\app\src\main\AndroidManifest.xml:2:1-24:12
+	package
+		ADDED from C:\Users\Naief Jobsen\Desktop\mimir\app\src\main\AndroidManifest.xml:3:5-44
+		INJECTED from C:\Users\Naief Jobsen\Desktop\mimir\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Naief Jobsen\Desktop\mimir\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Users\Naief Jobsen\Desktop\mimir\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Naief Jobsen\Desktop\mimir\app\src\main\AndroidManifest.xml:2:1-24:12
+		INJECTED from C:\Users\Naief Jobsen\Desktop\mimir\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from C:\Users\Naief Jobsen\Desktop\mimir\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Naief Jobsen\Desktop\mimir\app\src\main\AndroidManifest.xml:2:1-24:12
+		INJECTED from C:\Users\Naief Jobsen\Desktop\mimir\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\Naief Jobsen\Desktop\mimir\app\src\main\AndroidManifest.xml:2:11-69
+application
+ADDED from C:\Users\Naief Jobsen\Desktop\mimir\app\src\main\AndroidManifest.xml:5:5-22:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\Naief Jobsen\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\be7de382857ed98eadf98befbe6f6442\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\Naief Jobsen\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\be7de382857ed98eadf98befbe6f6442\AndroidManifest.xml:9:5-20
+	android:supportsRtl
+		ADDED from C:\Users\Naief Jobsen\Desktop\mimir\app\src\main\AndroidManifest.xml:10:9-35
+	android:label
+		ADDED from C:\Users\Naief Jobsen\Desktop\mimir\app\src\main\AndroidManifest.xml:8:9-41
+	android:roundIcon
+		ADDED from C:\Users\Naief Jobsen\Desktop\mimir\app\src\main\AndroidManifest.xml:9:9-54
+	android:icon
+		ADDED from C:\Users\Naief Jobsen\Desktop\mimir\app\src\main\AndroidManifest.xml:7:9-43
+	android:allowBackup
+		ADDED from C:\Users\Naief Jobsen\Desktop\mimir\app\src\main\AndroidManifest.xml:6:9-35
+	android:theme
+		ADDED from C:\Users\Naief Jobsen\Desktop\mimir\app\src\main\AndroidManifest.xml:11:9-40
+activity#com.example.naiefjobsen.mimir.MainActivity
+ADDED from C:\Users\Naief Jobsen\Desktop\mimir\app\src\main\AndroidManifest.xml:12:9-21:20
+	android:label
+		ADDED from C:\Users\Naief Jobsen\Desktop\mimir\app\src\main\AndroidManifest.xml:14:13-45
+	android:theme
+		ADDED from C:\Users\Naief Jobsen\Desktop\mimir\app\src\main\AndroidManifest.xml:15:13-56
+	android:name
+		ADDED from C:\Users\Naief Jobsen\Desktop\mimir\app\src\main\AndroidManifest.xml:13:13-41
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\Naief Jobsen\Desktop\mimir\app\src\main\AndroidManifest.xml:16:13-20:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\Naief Jobsen\Desktop\mimir\app\src\main\AndroidManifest.xml:17:17-69
+	android:name
+		ADDED from C:\Users\Naief Jobsen\Desktop\mimir\app\src\main\AndroidManifest.xml:17:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\Naief Jobsen\Desktop\mimir\app\src\main\AndroidManifest.xml:19:17-77
+	android:name
+		ADDED from C:\Users\Naief Jobsen\Desktop\mimir\app\src\main\AndroidManifest.xml:19:27-74
+uses-sdk
+INJECTED from C:\Users\Naief Jobsen\Desktop\mimir\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\Naief Jobsen\Desktop\mimir\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Naief Jobsen\Desktop\mimir\app\src\main\AndroidManifest.xml
+MERGED from [com.android.support:design:27.1.1] C:\Users\Naief Jobsen\.gradle\caches\transforms-1\files-1.1\design-27.1.1.aar\db1ab94c8821a3966465560d6fa790b4\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:27.1.1] C:\Users\Naief Jobsen\.gradle\caches\transforms-1\files-1.1\design-27.1.1.aar\db1ab94c8821a3966465560d6fa790b4\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\Naief Jobsen\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\12a41bc9d159651af4d2138e53ad9447\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\Naief Jobsen\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\12a41bc9d159651af4d2138e53ad9447\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\Naief Jobsen\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\be7de382857ed98eadf98befbe6f6442\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\Naief Jobsen\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\be7de382857ed98eadf98befbe6f6442\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:support-v4:27.1.1] C:\Users\Naief Jobsen\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\1bfe0507461b44d996b774b3e7b6ea4b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.1.1] C:\Users\Naief Jobsen\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\1bfe0507461b44d996b774b3e7b6ea4b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\Naief Jobsen\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\03a98464bca320a74bdd8b33663c8744\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\Naief Jobsen\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\03a98464bca320a74bdd8b33663c8744\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\Naief Jobsen\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\a188793967064eec31c6ffaa14bc5a27\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\Naief Jobsen\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\a188793967064eec31c6ffaa14bc5a27\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:27.1.1] C:\Users\Naief Jobsen\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.1.aar\7af7ba53a673ae8b5b08ea50d0438be6\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:27.1.1] C:\Users\Naief Jobsen\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.1.aar\7af7ba53a673ae8b5b08ea50d0438be6\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\Naief Jobsen\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\6ac36da1adbd0c6cee99cb9913b9cdd3\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\Naief Jobsen\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\6ac36da1adbd0c6cee99cb9913b9cdd3\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\Naief Jobsen\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\2932b2935813d3970c0bba4fd597451d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\Naief Jobsen\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\2932b2935813d3970c0bba4fd597451d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\Naief Jobsen\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\7de1037ba7807777c6f47962cfe58372\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\Naief Jobsen\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\7de1037ba7807777c6f47962cfe58372\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.1.1] C:\Users\Naief Jobsen\.gradle\caches\transforms-1\files-1.1\transition-27.1.1.aar\b068c6080b9e4545c797cfcee0d9a52e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.1.1] C:\Users\Naief Jobsen\.gradle\caches\transforms-1\files-1.1\transition-27.1.1.aar\b068c6080b9e4545c797cfcee0d9a52e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\Naief Jobsen\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.1.aar\e8f083df258b02dfb1dc4083e05c5ced\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\Naief Jobsen\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.1.aar\e8f083df258b02dfb1dc4083e05c5ced\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\Naief Jobsen\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\8a91326cf79e3da49bc3ce94eb26faf6\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\Naief Jobsen\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\8a91326cf79e3da49bc3ce94eb26faf6\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\Naief Jobsen\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\2d6d7259a6b4a8fdf4de80ecf1486485\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\Naief Jobsen\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\2d6d7259a6b4a8fdf4de80ecf1486485\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\Naief Jobsen\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\9142bf5326c3a5d3211c073d4f93fd9f\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\Naief Jobsen\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\9142bf5326c3a5d3211c073d4f93fd9f\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\Naief Jobsen\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\4de87721b5ad2202ea90458651099846\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\Naief Jobsen\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\4de87721b5ad2202ea90458651099846\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\Naief Jobsen\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\42fdbf1f5e04c70798a3aedda06d6cf1\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\Naief Jobsen\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\42fdbf1f5e04c70798a3aedda06d6cf1\AndroidManifest.xml:20:5-44
+INJECTED from C:\Users\Naief Jobsen\Desktop\mimir\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Naief Jobsen\Desktop\mimir\app\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from C:\Users\Naief Jobsen\Desktop\mimir\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Naief Jobsen\Desktop\mimir\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Naief Jobsen\Desktop\mimir\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\Naief Jobsen\Desktop\mimir\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Naief Jobsen\Desktop\mimir\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Naief Jobsen\Desktop\mimir\app\src\main\AndroidManifest.xml
