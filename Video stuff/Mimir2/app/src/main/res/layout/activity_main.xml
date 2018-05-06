@@ -58,6 +58,39 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/longitude_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="15dp"
+                android:layout_marginStart="20dp"
+                android:text="Longitude" />
+
+            <TextView
+                android:id="@+id/latitude_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/longitude_textview"
+                android:layout_marginEnd="21dp"
+                android:text="Longitude" />
+
+            <TextView
+                android:id="@+id/debug"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/latitude_textview"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="17dp"
+                android:text="" />
+        </RelativeLayout>
     </FrameLayout>
 
 </android.support.constraint.ConstraintLayout>
