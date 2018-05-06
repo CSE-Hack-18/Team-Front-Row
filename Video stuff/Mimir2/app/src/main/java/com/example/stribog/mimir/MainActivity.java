@@ -24,14 +24,24 @@ public class MainActivity extends AppCompatActivity implements Connector.IConnec
     }
 
     public void Start(View v){
+
         vc = new Connector(videoFrame, Connector.ConnectorViewStyle.VIDYO_CONNECTORVIEWSTYLE_Default, 0, "", "", 0);
         vc.showViewAt(videoFrame, 0, 0, videoFrame.getWidth(), videoFrame.getHeight());
         vc.cycleCamera();
+
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        String ourToken = "cHJvdmlzaW9uAENhbGxlckAyNzc2YzEudmlkeW8uaW8ANjM2OTI4NDQyODEAADZiNGQzYzc5ZjE4ZTVjOWI3ZDNmMmU5Y2QwMWRkYzFiYTU1ZTAyYWY3YjYxMjZjNDRjY2I4OGRhZmQ1YTk5OTRjNWVmZDI5OTYxMjJiM2E3M2YwMWE3N2ZiOTMyNDBmYQ==";
+        vc.connect("prod.vidyo.io", ourToken, "Caller", "DemoRoom", this);
     }
 
     public void Connect(View v) {
-        String ourToken = "cHJvdmlzaW9uAENhbGxlckAyNzc2YzEudmlkeW8uaW8ANjM2OTI4NDQyODEAADZiNGQzYzc5ZjE4ZTVjOWI3ZDNmMmU5Y2QwMWRkYzFiYTU1ZTAyYWY3YjYxMjZjNDRjY2I4OGRhZmQ1YTk5OTRjNWVmZDI5OTYxMjJiM2E3M2YwMWE3N2ZiOTMyNDBmYQ==";
-        vc.connect("prod.vidyo.io", ourToken, "Caller", "DemoRoom", this);
+        //String ourToken = "cHJvdmlzaW9uAENhbGxlckAyNzc2YzEudmlkeW8uaW8ANjM2OTI4NDQyODEAADZiNGQzYzc5ZjE4ZTVjOWI3ZDNmMmU5Y2QwMWRkYzFiYTU1ZTAyYWY3YjYxMjZjNDRjY2I4OGRhZmQ1YTk5OTRjNWVmZDI5OTYxMjJiM2E3M2YwMWE3N2ZiOTMyNDBmYQ==";
+        //vc.connect("prod.vidyo.io", ourToken, "Caller", "DemoRoom", this);
     }
 
     public void Disconnect(View v){
@@ -45,7 +55,12 @@ public class MainActivity extends AppCompatActivity implements Connector.IConnec
 
     @Override
     public void onFailure(Connector.ConnectorFailReason connectorFailReason) {
+        System.out.println("TIMED OUT TIMED OUT TIMED OUT ---------------------------------------------------------");
+        if(connectorFailReason == Connector.ConnectorFailReason.VIDYO_CONNECTORFAILREASON_ConnectionTimeout){
 
+            System.out.println("RECONNECTINGGGGGG    ---------------------------------------------------------");
+            this.Connect(videoFrame);
+        }
     }
 
     @Override
