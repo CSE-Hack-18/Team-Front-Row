@@ -8,9 +8,13 @@ import android.widget.FrameLayout;
 import com.vidyo.VidyoClient.Connector.*;
 import com.vidyo.VidyoClient.Device.Device;
 import com.vidyo.VidyoClient.Device.LocalCamera;
+import com.vidyo.VidyoClient.Device.RemoteCamera;
+import com.vidyo.VidyoClient.Endpoint.Participant;
+
+import static com.vidyo.VidyoClient.Connector.Connector.ConnectorDisconnectReason.VIDYO_CONNECTORDISCONNECTREASON_ConnectionTimeout;
 
 
-public class MainActivity extends AppCompatActivity implements Connector.IConnect, Connector.IRegisterLocalCameraEventListener {
+public class MainActivity extends AppCompatActivity implements Connector.IConnect, Connector.IRegisterRemoteCameraEventListener {
 
     private Connector vc;
     private FrameLayout videoFrame;
@@ -30,6 +34,15 @@ public class MainActivity extends AppCompatActivity implements Connector.IConnec
         vc = new Connector(videoFrame, Connector.ConnectorViewStyle.VIDYO_CONNECTORVIEWSTYLE_Default, 16, "", "", 0);
         vc.showViewAt(videoFrame, 0, 0, videoFrame.getWidth(), videoFrame.getHeight());
 
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        String ourToken = "cHJvdmlzaW9uAEhvc3RAMjc3NmMxLnZpZHlvLmlvADYzNjkyODQ0MTMwAAAxZTMzMmJmZDIwYzdhNDlmOWVhZThjZDdkMGNjZGJiZmRlNTMyMzY0ZjMwNWI4NzI2MmJlYmIwZmVlNmY5YTM0MjdhZWU4YzFhNjk2MjJmMjkwODZjYmQwMDA4NTAwMDE=";
+        vc.connect("prod.vidyo.io", ourToken, "Hostr", "DemoRoom", this);
+
     }
 
     public void Connect(View v) {
@@ -38,9 +51,9 @@ public class MainActivity extends AppCompatActivity implements Connector.IConnec
     }
 
     public void Disconnect(View v){
-        vc.disconnect();
-    }
 
+                vc.disconnect();
+    }
     @Override
     public void onSuccess() {
         // on successful connection:
@@ -50,7 +63,12 @@ public class MainActivity extends AppCompatActivity implements Connector.IConnec
 
     @Override
     public void onFailure(Connector.ConnectorFailReason connectorFailReason) {
+        System.out.println("TIMED OUT TIMED OUT TIMED OUT ---------------------------------------------------------");
+        if(connectorFailReason == Connector.ConnectorFailReason.VIDYO_CONNECTORFAILREASON_ConnectionTimeout){
 
+            System.out.println("RECONNECTINGGGGGG    ---------------------------------------------------------");
+            this.Connect(videoFrame);
+        }
     }
 
     @Override
@@ -59,24 +77,18 @@ public class MainActivity extends AppCompatActivity implements Connector.IConnec
     }
 
 
-
     @Override
-    public void onLocalCameraAdded(LocalCamera localCamera){
+    public void onRemoteCameraAdded(RemoteCamera remoteCamera, Participant participant) {
 
     }
 
     @Override
-    public void onLocalCameraRemoved(LocalCamera localCamera) {
+    public void onRemoteCameraRemoved(RemoteCamera remoteCamera, Participant participant) {
 
     }
 
     @Override
-    public void onLocalCameraSelected(LocalCamera localCamera) {
-
-    }
-
-    @Override
-    public void onLocalCameraStateUpdated(LocalCamera localCamera, Device.DeviceState deviceState) {
+    public void onRemoteCameraStateUpdated(RemoteCamera remoteCamera, Participant participant, Device.DeviceState deviceState) {
 
     }
 }
