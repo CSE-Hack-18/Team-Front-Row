@@ -20,6 +20,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.FrameLayout;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 import android.location.Geocoder;
@@ -56,9 +57,6 @@ public class MainActivity extends AppCompatActivity implements Connector.IConnec
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        mLatitudeTextView = (TextView) findViewById((R.id.latitude_textview));
-        mLongitudeTextView = (TextView) findViewById((R.id.longitude_textview));
-        debug = (TextView) findViewById(R.id.debug);
 
         mGoogleApiClient = new GoogleApiClient.Builder(this)
                 .addConnectionCallbacks(this)
@@ -73,6 +71,15 @@ public class MainActivity extends AppCompatActivity implements Connector.IConnec
         ConnectorPkg.setApplicationUIContext(this);
         ConnectorPkg.initialize();
         videoFrame = (FrameLayout)findViewById(R.id.videoFrame);
+
+
+        ImageButton ib = (ImageButton) findViewById(R.id.ib);
+        ib.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Start(videoFrame);
+            }
+        });
 
     }
 
@@ -145,7 +152,6 @@ public class MainActivity extends AppCompatActivity implements Connector.IConnec
     public void onConnected(Bundle bundle) {
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             // TODO: Consider calling
-            mLatitudeTextView.setText("Failed. Lacks permission.");
             return;
         }
             startLocationUpdates();
@@ -155,8 +161,6 @@ public class MainActivity extends AppCompatActivity implements Connector.IConnec
                 startLocationUpdates();
             }
             if (mLocation != null) {
-                 mLatitudeTextView.setText(String.valueOf(mLocation.getLatitude()));
-                mLongitudeTextView.setText(String.valueOf(mLocation.getLongitude()));
             } else {
                 Toast.makeText(this, "Location not Detected", Toast.LENGTH_SHORT).show();
             }
@@ -218,16 +222,10 @@ public class MainActivity extends AppCompatActivity implements Connector.IConnec
         String msg = "Did not receive location";
         try {
             String address = geocoder.getFromLocation(location.getLatitude(), location.getLongitude(), 1).get(0).getAddressLine(0);
-            debug.setText(address);
             msg = "Address" + address;
 
 
-        }catch (Exception e){debug.setText("Failed to get address");
-            msg = "Updated Location: " +
-                    Double.toString(location.getLatitude()) + "," +
-                    Double.toString(location.getLongitude());
-            mLatitudeTextView.setText("Lat:"+ String.valueOf(location.getLatitude()));
-            mLongitudeTextView.setText("Lon:"+String.valueOf(location.getLongitude() ));
+        }catch (Exception e){
         }
 
         Toast.makeText(this, msg, Toast.LENGTH_SHORT).show();
