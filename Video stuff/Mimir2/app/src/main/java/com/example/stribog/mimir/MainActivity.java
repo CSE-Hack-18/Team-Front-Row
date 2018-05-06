@@ -216,14 +216,20 @@ public class MainActivity extends AppCompatActivity implements Connector.IConnec
     @Override
     public void onLocationChanged(Location location) {
 
-        String msg = "Updated Location: " +
-                Double.toString(location.getLatitude()) + "," +
-                Double.toString(location.getLongitude());
-        mLatitudeTextView.setText("Lat:"+ String.valueOf(location.getLatitude()));
-        mLongitudeTextView.setText("Lon:"+String.valueOf(location.getLongitude() ));
+        String msg = "Did not receive location";
         try {
-            debug.setText(geocoder.getFromLocation(location.getLatitude(), location.getLongitude(), 1).get(0).getAddressLine(0));
-        }catch (Exception e){debug.setText("Failed to get address");}
+            String address = geocoder.getFromLocation(location.getLatitude(), location.getLongitude(), 1).get(0).getAddressLine(0);
+            debug.setText(address);
+            msg = "Address" + address;
+
+
+        }catch (Exception e){debug.setText("Failed to get address");
+            msg = "Updated Location: " +
+                    Double.toString(location.getLatitude()) + "," +
+                    Double.toString(location.getLongitude());
+            mLatitudeTextView.setText("Lat:"+ String.valueOf(location.getLatitude()));
+            mLongitudeTextView.setText("Lon:"+String.valueOf(location.getLongitude() ));
+        }
 
         Toast.makeText(this, msg, Toast.LENGTH_SHORT).show();
         // You can now create a LatLng Object for use with maps

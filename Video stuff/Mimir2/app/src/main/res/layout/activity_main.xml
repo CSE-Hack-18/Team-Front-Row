@@ -89,7 +89,7 @@
                 android:layout_above="@+id/latitude_textview"
                 android:layout_centerHorizontal="true"
                 android:layout_marginBottom="17dp"
-                android:text="" />
+                android:text="Address" />
         </RelativeLayout>
     </FrameLayout>
 
